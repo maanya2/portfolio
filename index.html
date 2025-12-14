@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- CDN Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- CDN Remin Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#F0F0F0] scroll-smooth">
+    <div class="main-page w-full min-h-screen">
+      <!-- FIXED NAVBAR -->
+      <nav class="fixed top-4 md:top-10 left-0 w-full z-50 px-4 md:px-0">
+        <div
+          class="w-full md:w-[90%] mx-auto rounded-lg bg-black/10 backdrop-blur-lg border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
+        >
+          <ul class="flex justify-between items-center p-3 md:p-5 text-white">
+            <!-- Logo -->
+            <li>
+              <a
+                href="#home"
+                class="font-semibold text-xl md:text-[25px] tracking-wide text-black"
+              >
+                Maanya<span class="text-orange-600">.</span>
+              </a>
+            </li>
+
+            <!-- Hamburger Menu Button (Mobile) -->
+            <button
+              id="mobile-menu-button"
+              class="md:hidden text-black text-2xl focus:outline-none"
+              aria-label="Toggle menu"
+            >
+              <i class="ri-menu-line" id="menu-icon"></i>
+              <i class="ri-close-line hidden" id="close-icon"></i>
+            </button>
+
+            <!-- Menu -->
+            <div
+              id="mobile-menu"
+              class="hidden md:flex md:space-x-6 lg:space-x-10 absolute md:relative top-full left-0 w-full md:w-auto bg-black/10 backdrop-blur-lg md:bg-transparent rounded-lg md:rounded-none mt-2 md:mt-0 flex-col md:flex-row items-center py-4 md:py-0 space-y-4 md:space-y-0"
+            >
+              <a
+                href="#home"
+                class="text-black transition-colors duration-300 hover:text-orange-500 px-4 md:px-0"
+                >Home</a
+              >
+              <a
+                href="#about"
+                class="text-black transition-colors duration-300 hover:text-orange-500 px-4 md:px-0"
+                >About</a
+              >
+              <a
+                href="#projects"
+                class="text-black transition-colors duration-300 hover:text-orange-500 px-4 md:px-0"
+                >Education</a
+              >
+              <a
+                href="#contact"
+                class="text-black transition-colors duration-300 hover:text-orange-500 px-4 md:px-0"
+                >Contact</a
+              >
+            </div>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- CONTENT UNDER NAVBAR -->
+      <div
+        class="first-page flex flex-col md:flex-row w-full min-h-screen pt-24 md:pt-0"
+        id="home"
+      >
+        <!-- LEFT SIDE -->
+        <div
+          class="main-left w-full md:w-1/2 min-h-[50vh] md:h-full bg-red flex flex-col justify-center px-4 md:px-0"
+        >
+          <div class="textsss flex items-center">
+            <div class="text-all">
+              <h5 class="hellotxt text-2xl md:text-3xl font-semibold">Hello</h5>
+              <h2 class="txt-main text-3xl md:text-4xl lg:text-5xl">
+                I'm Maanya A <br />A skilled communicator <br />with strong
+                leadership.
+              </h2>
+            </div>
+          </div>
+          <div
+            class="buttons mt-[40px] flex flex-col md:flex-row gap-4 md:gap-0"
+          >
+            <button
+              type="download"
+              class="button-one w-full md:w-[230px] h-[50px] md:h-[60px] mt-[20px] md:mt-[30px] ml-0 md:ml-[130px]"
+            >
+              GET MY CV
+            </button>
+
+            <button
+              type="button"
+              class="button-two w-full md:w-[230px] h-[50px] md:h-[60px] mt-[10px] md:mt-[30px] ml-0 md:ml-[50px]"
+            >
+              <a href="#contact">GET IN TOUCH</a>
+            </button>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="main-right w-full md:w-1/2 min-h-[50vh] md:h-full relative">
+          <div class="image">
+            <div class="image-mamnya flex justify-center md:justify-start">
+              <img
+                src="assets/12.png"
+                alt="user-imaeg"
+                class="border-black border-4 md:border-7 w-[300px] h-[300px] md:w-[500px] md:h-[500px] object-cover"
+              />
+            </div>
+          </div>
+          <!-- ICONS -->
+          <div
+            class="icons absolute right-4 md:right-15 top-auto md:top-[570px] bottom-4 md:bottom-auto md:-translate-y-1/2"
+          >
+            <ul
+              class="flex flex-row md:flex-col space-x-4 md:space-x-0 md:space-y-5 text-2xl"
+            >
+              <li>
+                <a
+                  href="https://www.instagram.com/__maanyaah?igsh=MTNpcnVsaTV1Y3BnYw=="
+                  target="_blank"
+                  ><i
+                    class="ri-instagram-line text-[24px] md:text-[30px] hover:text-[#c93f1d] transition duration-200"
+                  ></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/maanya-a-a79b87334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank"
+                  ><i
+                    class="ri-linkedin-box-fill text-[24px] md:text-[30px] hover:text-[#c93f1d] transition duration-200"
+                  ></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/maanya2" target="_blank"
+                  ><i
+                    class="ri-github-fill text-[24px] md:text-[30px] hover:text-[#c93f1d] transition duration-200"
+                  ></i
+                ></a>
+                <div
+                  class="hidden md:block w-[2px] h-[120px] bg-black mt-0 ml-3.5"
+                ></div>
+              </li>
+              <li>
+                <!-- <a href="#"
+                  ><i
+                    class="ri-twitter-fill text-[30px] hover:text-[#c93f1d] transition duration-200"
+                  ></i
+                ></a> -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section  -->
+    <div
+      class="main-two w-full min-h-screen py-10 md:py-0 md:h-screen"
+      id="about"
+    >
+      <h1
+        class="text-4xl md:text-5xl lg:text-6xl font-bold pt-20 md:pt-30 px-4 md:px-0 md:ml-20"
+      >
+        About Me
+      </h1>
+      <div
+        class="w-full md:w-[1340px] h-[1px] mx-4 md:mx-0 md:ml-20 mt-2 md:mr-20 bg-gray-700"
+      ></div>
+      <div class="main-two-page flex flex-col md:flex-row px-4 md:px-0">
+        <div
+          class="icon-img w-full md:w-[30%] min-h-[300px] md:h-[75vh] flex justify-center md:justify-start"
+        >
+          <img
+            src="assets/about-banner-img.svg"
+            alt="LogoSV"
+            class="w-[250px] h-[300px] md:w-[300px] md:h-[400px] mt-[30px] md:mt-[100px] md:ml-20"
+          />
+        </div>
+        <div class="about-txt w-full md:w-[70%] min-h-[75vh] md:h-[75vh]">
+          <p
+            class="mt-8 md:mt-30 mx-4 md:mx-0 md:mr-20 text-base md:text-[18px] leading-7 text-gray-700"
+          >
+            My name is Maanya, and I am a confident and motivated individual
+            with strong communication and hosting skills. I have good
+            event-management abilities and enjoy working in team environments
+            where leadership, creativity, and quick decision-making are
+            essential. I am comfortable handling responsibility and managing
+            situations effectively on the spot, which helps me contribute
+            positively to both academic and extracurricular activities.
+          </p>
+          <br />
+          <p
+            class="mx-4 md:mx-0 md:mr-20 text-base md:text-[18px] leading-7 text-gray-700"
+          >
+            I am presently pursuing a Bachelor of Engineering in Artificial
+            Intelligence and Machine Learning at KVG College of Engineering. I
+            completed my schooling at KVG International Public School and my
+            pre-university education at KVG Amarajyothi Pre-University College,
+            maintaining a strong academic record. I am comfortable with Java,
+            data structures, basic AI & ML algorithms, and tools such as Jupyter
+            Notebook, GitHub, HTML, and CSS, and I am eager to continue learning
+            and growing in the field of technology.
+          </p>
+          <br />
+          <div
+            class="w-full md:w-[970px] h-[0.5px] ml-0 mt-2 md:mr-20 bg-gray-700"
+          ></div>
+          <div class="languages flex flex-wrap items-center gap-4 md:gap-0">
+            <img
+              src="assets/lang-icon.svg"
+              alt="Language-Icon"
+              class="mt-[30px] ml-4 md:ml-[40px] w-6 h-6 md:w-auto md:h-auto"
+            />
+            <p class="mt-[40px] ml-2 md:ml-[20px]">Language</p>
+            <div
+              class="english w-[120px] md:w-[150px] h-[45px] md:h-[50px] bg-white shadow-lg mt-[30px] ml-2 md:ml-[20px] rounded-[50px] flex items-center justify-center text-sm md:text-base"
+            >
+              English
+            </div>
+            <div
+              class="kannada w-[120px] md:w-[150px] h-[45px] md:h-[50px] bg-white shadow-lg mt-[30px] ml-2 md:ml-[20px] rounded-[50px] flex items-center justify-center text-sm md:text-base"
+            >
+              Kannada
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Education and skill Section  -->
+    <div
+      class="education w-full min-h-screen py-10 md:py-0 md:h-screen"
+      id="projects"
+    >
+      <h1
+        class="text-4xl md:text-5xl lg:text-6xl font-bold pt-20 md:pt-30 px-4 md:px-0 md:ml-20"
+      >
+        Education & Skills
+      </h1>
+      <div
+        class="w-full md:w-[1340px] h-[1px] mx-4 md:mx-0 md:ml-20 mt-2 md:mr-20 bg-gray-700"
+      ></div>
+      <div class="main-educ flex flex-col md:flex-row px-4 md:px-0">
+        <div class="Educat w-full md:w-[40%] min-h-[75vh] md:h-[75vh]">
+          <div class="first-edu ml-4 md:ml-20 mt-8 md:mt-30">
+            <i class="ri-record-circle-line text-lg md:text-xl">
+              Kvg International Public School -2010
+            </i>
+            <p class="ml-6 text-sm md:text-base">
+              Completed my schooling in KVG and achieving a strong academic
+              record.
+            </p>
+          </div>
+          <div class="second-edu ml-4 md:ml-20 mt-8">
+            <i class="ri-record-circle-line text-lg md:text-xl">
+              KVG Amarajyothi Pre-university College -2022
+            </i>
+            <p class="ml-6 text-sm md:text-base">
+              Completed my PUC with a focus on Science, achieving a strong
+              academic record.
+            </p>
+          </div>
+          <div class="third-edu ml-4 md:ml-20 mt-8">
+            <i class="ri-record-circle-line text-lg md:text-xl">
+              Kvg College Of Engineering -2024
+            </i>
+            <p class="ml-6 text-sm md:text-base">
+              Currently pursuing a Bachelor of Engineering in Artificial
+              Intelligence and Machine Learning.
+            </p>
+          </div>
+        </div>
+        <div class="skills w-full md:w-[60%] min-h-[75vh] md:h-[75vh]"></div>
+      </div>
+    </div>
+
+    <!-- Contact Section  -->
+    <div
+      class="contact w-full min-h-screen py-10 md:py-0 md:h-[120vh]"
+      id="contact"
+    >
+      <h1
+        class="text-4xl md:text-5xl lg:text-6xl font-bold pt-20 md:pt-30 px-4 md:px-0 md:ml-20"
+      >
+        Contact Me
+      </h1>
+      <div
+        class="w-full md:w-[1340px] h-[1px] mx-4 md:mx-0 md:ml-20 mt-2 md:mr-20 bg-gray-700"
+      ></div>
+
+      <div
+        class="max-w-7xl mx-auto px-4 md:px-6 py-10 md:py-20 flex flex-col lg:flex-row gap-10 md:gap-20 mt-6 md:mt-10"
+      >
+        <div class="flex-1">
+          <form class="space-y-6 md:space-y-12">
+            <div class="flex flex-col md:flex-row gap-6 md:gap-12">
+              <div class="w-full">
+                <label class="text-sm text-gray-500">Name *</label>
+                <input
+                  type="text"
+                  class="w-full border-b border-gray-300 focus:border-black outline-none py-2"
+                />
+              </div>
+
+              <div class="w-full">
+                <label class="text-sm text-gray-500">Phone *</label>
+                <input
+                  type="text"
+                  class="w-full border-b border-gray-300 focus:border-black outline-none py-2"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="text-sm text-gray-500">Email *</label>
+              <input
+                type="email"
+                class="w-full border-b border-gray-300 focus:border-black outline-none py-2"
+              />
+            </div>
+
+            <div>
+              <label class="text-sm text-gray-500">Message *</label>
+              <textarea
+                rows="4"
+                class="w-full border-b border-gray-300 focus:border-black outline-none py-2 resize-none"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="mt-6 md:mt-10 px-8 md:px-10 py-3 md:py-4 border border-orange-500 text-orange-500 rounded-full hover:bg-orange-500 hover:text-white transition w-full md:w-auto"
+            >
+              Send Now
+            </button>
+          </form>
+        </div>
+
+        <div class="flex-1 flex flex-col justify-between">
+          <div class="w-full flex justify-start md:justify-end">
+            <div
+              class="space-y-4 md:space-y-6 text-gray-500 text-base md:text-lg mt-10 md:mt-60 text-left md:text-right"
+            >
+              <p class="cursor-pointer hover:text-orange-500">
+                <a
+                  href="https://www.instagram.com/__maanyaah?igsh=MTNpcnVsaTV1Y3BnYw=="
+                  target="_blank"
+                  >Instagram</a
+                >
+              </p>
+              <p class="cursor-pointer hover:text-orange-500">
+                <a href="https://github.com/maanya2" target="_blank">GitHub</a>
+              </p>
+              <p class="cursor-pointer hover:text-orange-500">
+                <a
+                  href="https://www.linkedin.com/in/maanya-a-a79b87334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col md:flex-row gap-4 md:gap-16 mt-10 md:mt-20 md:ml-50"
+          >
+            <div>
+              <p
+                class="font-medium text-black border-b border-black pb-1 text-sm md:text-base"
+              >
+                <a href="https://mail.google.com/" target="_blank"
+                  >maanya@kvgce.ac.in</a
+                >
+              </p>
+            </div>
+
+            <div>
+              <p
+                class="font-medium text-black border-b border-black pb-1 text-sm md:text-base"
+              >
+                +91 94852 78549
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="w-full py-8 md:py-16">
+      <div class="max-w-7xl mx-auto px-4 md:px-6">
+        <div class="flex items-center justify-center">
+          <div class="flex-1 h-[2px] bg-black"></div>
+
+          <div
+            class="mx-4 md:mx-6 w-12 h-12 md:w-14 md:h-14 rounded-full bg-orange-500 flex items-center justify-center"
+          >
+            <span class="text-white text-xl md:text-2xl font-bold">M</span>
+          </div>
+
+          <div class="flex-1 h-[2px] bg-black"></div>
+        </div>
+
+        <!-- Footer Text -->
+        <p class="mt-6 md:mt-8 text-gray-500 text-xs md:text-sm text-center">
+          © All rights belong to
+          <span class="text-orange-500 font-medium">Maanya A</span>
+        </p>
+
+        <!-- <p class="mt-0 text-gray-500 text-sm">
+          Designed by
+          <span class="text-orange-500 cursor-pointer hover:underline">
+            MaanyaA
+          </span>
+          · Distributed by
+          <span class="text-orange-500 cursor-pointer hover:underline">
+            
+          </span>
+        </p> -->
+      </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+      const closeIcon = document.getElementById("close-icon");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        menuIcon.classList.toggle("hidden");
+        closeIcon.classList.toggle("hidden");
+      });
+
+      // Close menu when clicking on a link
+      const menuLinks = mobileMenu.querySelectorAll("a");
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          menuIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>

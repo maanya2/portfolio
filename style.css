@@ -1,0 +1,90 @@
+.main-menu a {
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  transition: color 0.3s ease;
+}
+.main-menu a :hover {
+  color: #c93f1d;
+}
+
+.main-right {
+  background-color: #f0f0f0;
+}
+.main-left {
+  background-color: #f0f0f0;
+}
+.textsss {
+  margin-top: 150px;
+}
+.hellotxt {
+  color: #c93f1d;
+  margin-left: 0;
+}
+.txt-main {
+  margin-left: 0;
+  font-weight: 700;
+  font-family: "Bricolage Grotesque", sans-serif;
+  padding-top: 10px;
+}
+.button-one {
+  width: 230px;
+  height: 60px;
+  margin-top: 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button-one:hover {
+  background-color: #c93f1d;
+}
+.button-two {
+  width: 230px;
+  height: 60px;
+  margin-top: 20px;
+  color: black;
+  border: 2px solid black;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button-two:hover {
+  background-color: black;
+  color: white;
+}
+
+.image {
+  margin-top: 40px;
+  margin-left: 0;
+}
+
+.main-two {
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.education {
+  font-family: "Bricolage Grotesque";
+}
+.first-edu i {
+  font-family: "Bricolage Grotesque";
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .textsss {
+    margin-top: 300px;
+  }
+  .hellotxt {
+    margin-left: 130px;
+  }
+  .txt-main {
+    margin-left: 130px;
+  }
+  .image {
+    margin-top: 140px;
+    margin-left: 100px;
+  }
+}
